@@ -18,7 +18,7 @@ test('File uploads1', async ({ page }) => {
   await page.waitForTimeout(4000);
   console.log("User lands on the application");
 
-  await page.locator('#file-upload').setInputFiles("Files/test1.txt");
+  await page.locator('#file-upload').setInputFiles("Uploads/test1.txt");
   console.log("File is successfully uploaded")
   await page.waitForTimeout(3000);
 
